@@ -79,6 +79,7 @@ alias ls='lsd --group-dirs=first'
 alias ll='lsd --group-dirs=first -lah'
 alias lt='lsd --tree'
 alias zen='open -a "Zen Browser"'
+alias wa='open -a "WhatsApp"'
 
 # Environment variables
 export DYLD_LIBRARY_PATH="/opt/homebrew/opt/libomp/lib:$DYLD_LIBRARY_PATH"
