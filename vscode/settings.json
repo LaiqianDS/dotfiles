@@ -1,76 +1,102 @@
 {
-    "[python]": {
-        "editor.formatOnType": true
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "workbench.preferredLightColorTheme": "Default Dark+",
-    "git.openRepositoryInParentFolders": "never",
-    "terminal.external.osxExec": "Ghostty.app",
-    "terminal.explorerKind": "external",
-    "terminal.integrated.enableMultiLinePasteWarning": "auto",
-    "editor.minimap.enabled": false,
-    "editor.rulers": [
-        {"column": 79, "color": "#002aff6a" },
-        {"column": 120, "color": "#002affc4" }
-    ],
-    "editor.wordWrap": "on",
-    "notebook.lineNumbers": "on",
-    "workbench.editor.enablePreview": false,
-    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit",
+            "source.organizeImports.ruff": "explicit"
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true
+    },
+    "breadcrumbs.enabled": false,
+    "chat.viewSessions.orientation": "stacked",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "block",
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.folding": false,
     "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
     "editor.fontLigatures": true,
-    "editor.fontWeight": "normal",
     "editor.fontSize": 14,
-    "workbench.settings.applyToAllProfiles": [
-
-
+    "editor.fontWeight": "normal",
+    "editor.formatOnSave": true,
+    "editor.glyphMargin": false,
+    "editor.guides.indentation": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.lightbulb.enabled": "off",
+    "editor.minimap.enabled": false,
+    "editor.overviewRulerBorder": true,
+    "editor.renderLineHighlight": "none",
+    "editor.renderWhitespace": "none",
+    "editor.rulers": [
+        {
+            "column": 79,
+            "color": "#002aff6a"
+        },
+        {
+            "column": 120,
+            "color": "#002affc4"
+        }
     ],
-    "workbench.editorAssociations": {
-        "*.copilotmd": "vscode.markdown.preview.editor",
-        "*.xlsx": "default"
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.stickyScroll.enabled": true,
+    "editor.suggestSelection": "recentlyUsed",
+    "editor.tabCompletion": "on",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.wordWrap": "on",
+    "explorer.compactFolders": false,
+    "explorer.decorations.badges": false,
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/__pycache__": true,
+        "**/.pytest_cache": true
     },
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "git.confirmSync": false,
+    "git.openRepositoryInParentFolders": "never",
     "github.copilot.enable": {
         "*": true,
         "plaintext": true,
         "markdown": true,
         "scminput": false
     },
-    "editor.defaultFormatter": "charliermarsh.ruff",
-    "jupyter.askForKernelRestart": false,
-    "notebook.defaultFormatter": "charliermarsh.ruff",
-    "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
-    "terminal.integrated.suggest.enabled": true,
-    "git.confirmSync": false,
-    "editor.unicodeHighlight.ambiguousCharacters": false,
-    "python.languageServer": "Default",
-    "yaml.schemas": {
-        "file:///Users/laiqiands/.vscode/extensions/atlassian.atlascode-3.8.16/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-    },
     "github.copilot.nextEditSuggestions.enabled": true,
-    "ruff.lineLength": 79,
-    "todo-tree.general.showActivityBarBadge": true,
-    "workbench.colorTheme": "One Dark Pro",
-    "editor.formatOnType": true,
-    "editor.formatOnSaveMode": "modificationsIfAvailable",
-    "workbench.preferredDarkColorTheme": "One Dark Pro",
-    "workbench.tree.renderIndentGuides": "none",
-    "workbench.tree.indent": 12,
-    "workbench.iconTheme": "material-icon-theme",
-    "material-icon-theme.hidesExplorerArrows": true,
-    "chat.viewSessions.orientation": "stacked",
+    "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
     "gitlens.ai.model": "vscode",
     "gitlens.ai.vscode.model": "copilot:gpt-4.1",
-    "explorer.compactFolders": false,
-    "explorer.decorations.badges": false,
-    "editor.lightbulb.enabled": "off",
-    "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewline": true,
-    "editor.cursorStyle": "block",
-    "editor.cursorBlinking": "solid",
-    "editor.renderLineHighlight": "none",
-    "editor.renderWhitespace": "none",
-    "editor.scrollbar.horizontal": "hidden",
-    "editor.scrollbar.vertical": "hidden",
-    "editor.overviewRulerBorder": true,
-    "editor.hideCursorInOverviewRuler": true,
-    "editor.tabCompletion": "on",
+    "jupyter.askForKernelRestart": false,
+    "material-icon-theme.hidesExplorerArrows": true,
+    "notebook.defaultFormatter": "charliermarsh.ruff",
+    "notebook.lineNumbers": "on",
+    "python.languageServer": "Default",
+    "ruff.lineLength": 79,
+    "terminal.explorerKind": "external",
+    "terminal.external.osxExec": "Ghostty.app",
+    "terminal.integrated.enableMultiLinePasteWarning": "auto",
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+    "terminal.integrated.suggest.enabled": true,
+    "todo-tree.general.showActivityBarBadge": true,
+    "window.commandCenter": false,
+    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.editor.enablePreview": false,
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.xlsx": "default"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.preferredDarkColorTheme": "One Dark Pro",
+    "workbench.preferredLightColorTheme": "Default Dark+",
+    "workbench.settings.applyToAllProfiles": [],
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "none",
+    "workbench.tree.indent": 12,
+    "workbench.tree.renderIndentGuides": "none",
+    "yaml.schemas": {
+        "file:///Users/laiqiands/.vscode/extensions/atlassian.atlascode-3.8.16/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    }
 }
