@@ -14,8 +14,13 @@ for f in "${files[@]}"; do
   echo "✓ $dst → $src"
 done
 
-if [ -d "$CLAUDE_DST/plugins" ] && [ ! -L "$CLAUDE_DST/plugins" ]; then
-  mv "$CLAUDE_DST/plugins" "$CLAUDE_DST/plugins.bak"
-fi
-ln -sf "$CLAUDE_SRC/plugins" "$CLAUDE_DST/plugins"
-echo "✓ $CLAUDE_DST/plugins → $CLAUDE_SRC/plugins"
+dirs=(plugins skills)
+for d in "${dirs[@]}"; do
+  src="$CLAUDE_SRC/$d"
+  dst="$CLAUDE_DST/$d"
+  if [ -d "$dst" ] && [ ! -L "$dst" ]; then
+    mv "$dst" "${dst}.bak"
+  fi
+  ln -sf "$src" "$dst"
+  echo "✓ $dst → $src"
+done
