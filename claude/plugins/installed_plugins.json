@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "plugins": {
+    "code-simplifier@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/laiqiands/.claude/plugins/cache/claude-plugins-official/code-simplifier/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-07T13:02:41.088Z",
+        "lastUpdated": "2026-03-07T13:02:41.088Z",
+        "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1"
+      }
+    ],
+    "pyright-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/laiqiands/.claude/plugins/cache/claude-plugins-official/pyright-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-07T13:06:21.106Z",
+        "lastUpdated": "2026-03-07T13:06:21.106Z",
+        "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1"
+      }
+    ],
+    "document-skills@anthropic-agent-skills": [
+      {
+        "scope": "user",
+        "installPath": "/Users/laiqiands/.claude/plugins/cache/anthropic-agent-skills/document-skills/b0cbd3df1533",
+        "version": "b0cbd3df1533",
+        "installedAt": "2026-03-07T13:10:13.988Z",
+        "lastUpdated": "2026-03-07T13:10:13.988Z",
+        "gitCommitSha": "b0cbd3df1533b396d281a6886d5132f623393a9c"
+      }
+    ]
+  }
+}
